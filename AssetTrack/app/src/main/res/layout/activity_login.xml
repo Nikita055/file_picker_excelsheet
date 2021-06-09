@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/assetbg"
+    tools:context="com.rajkamal.assettrack.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:visibility="gone"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="@android:color/holo_red_light">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:textStyle="bold"
+            android:text="Asset Tracking  "
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+
+            />
+    </androidx.appcompat.widget.Toolbar>
+<!--    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/textView">
+        <TextView
+            android:id="@+id/txtID"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:textStyle="bold"
+            android:text="Rajkamal Barcscan System Pvt Ltd "
+            android:textSize="15dp"
+            android:textColor="@android:color/white"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            />
+    </LinearLayout>-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="30dp"
+        app:cardCornerRadius="20dp"
+        >
+
+        <LinearLayout
+
+            android:id="@+id/lay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/assetbg"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:textSize="25sp"
+                android:text="ASSET TRACKING"
+                android:textStyle="bold|italic"
+                android:textColor="@android:color/holo_orange_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+          />
+
+            <EditText
+                android:id="@+id/username"
+                android:drawableStart="@drawable/user"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/border"
+                android:drawablePadding="5dp"
+                android:hint=" Username"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/password"
+                android:drawableStart="@drawable/password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/border"
+                android:drawablePadding="5dp"
+                android:hint=" Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/holo_red_dark"
+                android:onClick="loginClick"
+                android:padding="5dp"
+                android:text="Login"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+
+                />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Version 1.0"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>
+
